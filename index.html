@@ -1,60 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Página en Construcción</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-    }
-    .dot-pulse::before {
-      content: '';
-      display: block;
-      width: 12px;
-      height: 12px;
-      margin: auto;
-      border-radius: 50%;
-      background-color: #facc15;
-      animation: pulse 1.2s infinite ease-in-out;
-    }
-    @keyframes pulse {
-      0%, 100% {
-        transform: scale(0.8);
-        opacity: 0.6;
-      }
-      50% {
-        transform: scale(1.2);
-        opacity: 1;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+    <title>Moldesa</title>
+    <!-- Ruta corregida del CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-gradient-to-br from-yellow-300 via-orange-400 to-yellow-500 text-white flex items-center justify-center min-h-screen px-4">
+<body> 
+<!-- Navbar hamburguesa -->  
+<div id="navbar"></div>
 
-  <div class="text-center space-y-8">
-    <!-- Logo o ícono -->
-    <div class="text-6xl">🚧</div>
+<!-- Seccion Hero -->  
+<div id="hero"></div>
 
-    <!-- Título -->
-    <h1 class="text-4xl sm:text-5xl font-bold">Sitio en Construcción</h1>
+<!-- Seccion Nosotros -->  
+<div id="nosotros"></div>
 
-    <!-- Mensaje -->
-    <p class="text-lg sm:text-xl max-w-xl mx-auto text-white/90">
-      Estamos trabajando para ofrecerte la mejor experiencia. Volvé pronto y descubrí lo que estamos preparando para vos.
-   <b> MENSAJES POR WhatsApp: +54 9 11 6946-6999</b>
-    </p>
+<!-- Seccion Moldes -->  
+<div id="moldes"></div>
 
-    <!-- Loader animado -->
-    <div class="dot-pulse w-6 h-6 mx-auto"></div>
+<!-- Seccion Faq -->  
+<div id="testimonios"></div>
 
-   
-  </div>
-<!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-ab0af402-1685-4850-bd8e-db3a69e28e66" data-elfsight-app-lazy></div>
+<!-- Seccion Faq -->  
+<div id="faq"></div>
+
+<!-- Seccion Call Action -->  
+<div id="call-action"></div>
+
+<!-- Seccion Footer -->  
+<div id="footer"></div>
+
+<!-- Scripts corregidos -->
+<script src="script/main.js"></script>
+<script src="script/bloques.js"></script>
+
 </body>
 </html>

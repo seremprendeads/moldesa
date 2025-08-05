@@ -745,6 +745,10 @@ background-size: cover;
     margin-top: -80px;
   }
 
+p {
+    font-size: 1.3rem;
+}
+
   .cta-button-1 {
     display: none;
   }
@@ -876,3 +880,4 @@ background-size: cover;
     grid-template-columns: 1fr;
   }
 }
+

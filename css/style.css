@@ -5,7 +5,7 @@
 }
 
 :root {
-  --primary-color: #fbc103;          /* Amarillo */
+  --primary-color: #304573;          /* Azul */
   --secondary-color: #fca311;        /* Naranja */
   --accent-color: #e5e5e5;           /* Gris claro */
   --text-dark: #000000;              /* Negro */
@@ -905,4 +905,5 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+
 

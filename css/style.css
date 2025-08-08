@@ -762,43 +762,60 @@ background-size: cover;
     padding-left: 100px;
     padding-right: 100px;
   }
+ .footer-content {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2.5rem;
+  }
+  
+  .footer-nav-section:last-child {
+    grid-column: 2 / -1;
+    grid-row: 2;
+  }
+}
+
+/* Tablets (481px - 768px) */
+@media (max-width: 768px) {
+  .bg-gray-900 {
+    padding: 2.5rem 0 2rem;
+  }
+  
+  .footer {
+    padding: 0 1rem;
+  }
+  
   .footer-content {
-                grid-template-columns: 2fr 1fr 1fr 1fr;
-                gap: 2.5rem;
-            }
-            
-            .footer-nav-section:last-child {
-                grid-column: 2 / -1;
-                grid-row: 2;
-            }
-        }
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
 
-        /* Tablets */
-        @media (max-width: 768px) {
-            .footer {
-                padding: 0 1rem;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr 1fr;
-                gap: 2rem;
-                margin-bottom: 2rem;
-            }
+  .footer-logo-section {
+    grid-column: 1 / -1;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
 
-            .footer-logo-section {
-                grid-column: 1 / -1;
-                max-width: 100%;
-                margin-bottom: 1rem;
-            }
+  .footer-logo-description {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    padding-right: 0; /* Quitar el padding que causa problemas */
+    text-align: center;
+  }
 
-            .footer-nav-section {
-                margin-bottom: 1rem;
-            }
+  .footer-nav-section {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
 
-            .footer-social-links {
-                justify-content: flex-start;
-            }
-        }
+  .footer-nav-links {
+    align-items: center;
+  }
+
+  .footer-social-links {
+    justify-content: center;
+  }
+}
 /* ================================
    TABLET / MÓVILES GRANDES (≤ 768px)
 ================================ */
@@ -943,11 +960,12 @@ h2 {
                 padding: 0 1rem;
             }
 
-    .footer p {
-        font-size: 1rem;
-        text-align: left;
-        padding-right: 180px;
-    }
+     .footer p {
+    font-size: 1rem;
+    text-align: center; /* Cambiar de left a center */
+    padding-right: 0; /* Eliminar el padding problemático */
+  }
+
             
             .footer-content {
                 grid-template-columns: 1fr 1fr;
@@ -997,43 +1015,61 @@ h2 {
     grid-template-columns: 1fr;
   }
 
-       .bg-gray-900 {
-                padding: 2rem 0 1.5rem;
-            }
+ .bg-gray-900 {
+    padding: 2rem 0 1.5rem;
+  }
+  
+  .footer {
+    padding: 0 1rem;
+  }
 
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-                margin-bottom: 1.5rem;
-            }
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 
-            .footer-logo {
-                font-size: 1.25rem;
-                margin-bottom: 1rem;
-            }
+  .footer-logo {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
 
-            .footer-logo-description {
-                margin-bottom: 1.5rem;
-                font-size: 0.9rem;
-            }
+  .footer-logo-description {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    padding-right: 0;
+    text-align: center;
+  }
 
-            .footer-nav-title {
-                margin-bottom: 1rem;
-            }
+  .footer-nav-title {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
 
-            .footer-nav-links {
-                gap: 0.5rem;
-            }
+  .footer-nav-links {
+    gap: 0.5rem;
+    align-items: center;
+  }
 
-            .footer-social-links {
-                gap: 0.75rem;
-            }
+  .footer-nav-link {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
 
-            .footer-bottom {
-                padding-top: 1.5rem;
-                font-size: 0.8rem;
-            }
-        }
+  .footer-social-links {
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    padding-top: 1.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
      /* Móviles muy pequeños */
         @media (max-width: 320px) {
             .footer {
@@ -1048,3 +1084,36 @@ h2 {
                 flex-wrap: wrap;
             }
         }
+/* Móviles muy pequeños (menos de 320px) */
+@media (max-width: 320px) {
+  .footer {
+    padding: 0 0.75rem;
+  }
+
+  .footer-content {
+    gap: 1rem;
+  }
+
+  .footer-logo-description {
+    font-size: 0.85rem;
+  }
+
+  .footer-nav-title {
+    font-size: 0.8rem;
+  }
+
+  .footer-nav-link {
+    font-size: 0.85rem;
+  }
+
+  .footer-social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    font-size: 0.75rem;
+    padding: 1rem 0.5rem 0;
+  }
+}
+

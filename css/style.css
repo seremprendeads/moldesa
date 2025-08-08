@@ -258,6 +258,24 @@ nav {
   flex-shrink: 0;
 }
 
+.whatsapp-icon {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  filter: brightness(0) invert(1);
+  object-fit: contain;
+}
+
+/* Tamaño específico para navbar */
+.nav-links .whatsapp-icon {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+}
+
+
 
 
 /* Secciones */
@@ -839,32 +857,33 @@ nav {
   }
 
   /* BOTONES CTA */
-  .cta-button-1 {
-    display: none;
-  }
+ /* BOTONES CTA */
+.cta-button-1 {
+  display: none;
+}
 
-  .cta-button-2 {
-    display: block;
-    width: 100%;
-  }
+.cta-button-2 {
+  display: block;
+  width: 100%;
+}
 
-  .cta-button-1,
-  .cta-button-2 {
-    padding: 0.75rem 1rem;
-    max-width: 160px;
-    font-size: 0.9rem;
-  }
+.cta-button-1,
+.cta-button-2 {
+  padding: 0.75rem 1rem;
+  max-width: 160px;
+  font-size: 0.9rem;
+}
 
-  .icon-wrapper {
-    margin-left: 0.3rem;
-  }
+.icon-wrapper {
+  margin-left: 0.3rem;
+}
 
-  .whatsapp-icon {
-    width: 16px;
-    height: 16px;
-    min-width: 16px;
-    min-height: 16px;
-  }
+.whatsapp-icon {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+}
 
   /* ABOUT */
   .about-content {
@@ -1085,15 +1104,6 @@ nav {
    MÓVILES MUY PEQUEÑOS (≤ 320px)
 ================================ */
 @media (max-width: 320px) {
-
-    .whatsapp-icon {
-  width: 18px;
-  height: 18px;
-  min-width: 18px;
-  min-height: 18px;
-  filter: brightness(0) invert(1);
-  object-fit: contain;
-}
   /* CALL-ACTION LOGO MÁS COMPACTO */
   .cta-section .logo {
     font-size: 1.6rem;
@@ -1143,4 +1153,5 @@ nav {
     padding: 1rem 0.5rem 0;
   }
 }
+
 

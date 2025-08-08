@@ -1117,6 +1117,139 @@ h2 {
   }
 }
 
+/* ===== CORRECCIONES PARA LOGOS ===== */
+
+/* Logo de Call-Action - Centrado y más grande */
+.cta-section .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-light);
+  font-size: 2rem; /* Más grande que el original (1.2rem) */
+  font-weight: bold;
+  text-decoration: none;
+  justify-content: center; /* Centrado */
+  margin-bottom: 2rem; /* Espacio debajo del logo */
+}
+
+.cta-section .logo img {
+  height: 50px; /* Más grande que el original (35px) */
+  width: auto;
+}
+
+/* Footer - Correcciones específicas para móviles */
+
+/* Tablets (768px y menores) */
+@media (max-width: 768px) {
+  /* Footer logo centrado */
+  .footer-logo-section {
+    grid-column: 1 / -1;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.5rem; /* Mantener el mismo tamaño */
+    font-weight: 700;
+    color: #f9fafb;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    justify-content: center; /* Centrado en móviles */
+  }
+
+  .footer-logo img {
+    height: 35px; /* Mantener el mismo tamaño */
+    width: auto;
+  }
+
+  /* Secciones de navegación alineadas a la izquierda */
+  .footer-nav-section {
+    margin-bottom: 1rem;
+    text-align: left; /* Alineado a la izquierda */
+  }
+
+  .footer-nav-title {
+    text-align: left; /* Alineado a la izquierda */
+  }
+
+  .footer-nav-links {
+    align-items: flex-start; /* Alineado a la izquierda */
+  }
+
+  .footer-nav-link {
+    text-align: left; /* Alineado a la izquierda */
+  }
+}
+
+/* Móviles (480px y menores) */
+@media (max-width: 480px) {
+  /* Call-action logo responsivo */
+  .cta-section .logo {
+    font-size: 1.8rem; /* Ligeramente más pequeño en móviles muy pequeños */
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-section .logo img {
+    height: 45px; /* Ligeramente más pequeño en móviles */
+  }
+
+  /* Footer logo mantiene el centrado */
+  .footer-logo {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    justify-content: center; /* Mantener centrado */
+  }
+
+  .footer-logo img {
+    height: 35px; /* Mantener el mismo tamaño */
+    width: auto;
+  }
+
+  /* Navegación del footer alineada a la izquierda */
+  .footer-nav-title {
+    margin-bottom: 1rem;
+    text-align: left; /* Alineado a la izquierda */
+  }
+
+  .footer-nav-links {
+    gap: 0.5rem;
+    align-items: flex-start; /* Alineado a la izquierda */
+  }
+
+  .footer-nav-link {
+    text-align: left; /* Alineado a la izquierda */
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Móviles muy pequeños (320px y menores) */
+@media (max-width: 320px) {
+  /* Call-action logo más compacto */
+  .cta-section .logo {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .cta-section .logo img {
+    height: 40px;
+  }
+
+  /* Footer logo mantiene proporciones */
+  .footer-logo {
+    font-size: 1.1rem;
+  }
+
+  .footer-logo img {
+    height: 30px; /* Ligeramente más pequeño solo en pantallas muy pequeñas */
+  }
+}
+
+
 
 
 

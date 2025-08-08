@@ -258,6 +258,14 @@ nav {
   flex-shrink: 0;
 }
 
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  flex-shrink: 0;
+}
+
 .whatsapp-icon {
   width: 18px;
   height: 18px;
@@ -265,7 +273,7 @@ nav {
   min-height: 18px;
   filter: brightness(0) invert(1);
   object-fit: contain;
-}
+
 
 /* Tamaño específico para navbar */
 .nav-links .whatsapp-icon {
@@ -874,16 +882,6 @@ nav {
   font-size: 0.9rem;
 }
 
-.icon-wrapper {
-  margin-left: 0.3rem;
-}
-
-.whatsapp-icon {
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
-  min-height: 16px;
-}
 
   /* ABOUT */
   .about-content {
@@ -1153,5 +1151,6 @@ nav {
     padding: 1rem 0.5rem 0;
   }
 }
+
 
 

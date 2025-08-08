@@ -1,4 +1,3 @@
-// FAQ Toggle - Función mejorada
 function toggleFAQ(button) {
   const answer = button.nextElementSibling;
   const isOpen = answer.classList.contains('open');
@@ -20,31 +19,21 @@ function toggleFAQ(button) {
   }
 }
 
-// Inicializar FAQ cuando el DOM esté listo
-function inicializarFAQ() {
-  const faqButtons = document.querySelectorAll('.faq-question');
-  
-  if (faqButtons.length > 0) {
-    console.log(`FAQ inicializado: ${faqButtons.length} preguntas encontradas`);
-    
-    // Agregar eventos a los botones que no los tengan
-    faqButtons.forEach(button => {
-      if (!button.hasAttribute('data-faq-initialized')) {
-        button.setAttribute('data-faq-initialized', 'true');
-        button.addEventListener('click', () => toggleFAQ(button));
-      }
-    });
-  } else {
-    console.warn('No se encontraron elementos FAQ');
-  }
+// Inicializar FAQ inmediatamente
+function initFAQ() {
+  const faqButtons = document.querySelectorAll('[data-faq-toggle]');
+  faqButtons.forEach(button => {
+    button.addEventListener('click', () => toggleFAQ(button));
+  });
+  console.log('FAQ inicializado:', faqButtons.length, 'botones');
 }
 
-// Inicializar cuando el DOM esté listo
+// Ejecutar inmediatamente
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', inicializarFAQ);
+  document.addEventListener('DOMContentLoaded', initFAQ);
 } else {
-  inicializarFAQ();
+  initFAQ();
 }
 
-// También hacer la función global por si se llama desde HTML
-window.toggleFAQ = toggleFAQ;
+// También ejecutar con un pequeño delay para asegurar
+setTimeout(initFAQ, 50);

@@ -1,3 +1,4 @@
+// FAQ Toggle - Función que funciona con ambos enfoques
 function toggleFAQ(button) {
   const answer = button.nextElementSibling;
   const isOpen = answer.classList.contains('open');
@@ -19,21 +20,63 @@ function toggleFAQ(button) {
   }
 }
 
-// Inicializar FAQ inmediatamente
-function initFAQ() {
-  const faqButtons = document.querySelectorAll('[data-faq-toggle]');
-  faqButtons.forEach(button => {
-    button.addEventListener('click', () => toggleFAQ(button));
+// Hacer la función disponible globalmente INMEDIATAMENTE
+window.toggleFAQ = toggleFAQ;
+
+// Inicializar FAQ
+function inicializarFAQ() {
+  // Buscar botones con onclick (método antiguo)
+  const faqButtonsOnclick = document.querySelectorAll('.faq-question[onclick]');
+  
+  // Buscar botones con data-faq-toggle (método nuevo)
+  const faqButtonsData = document.querySelectorAll('[data-faq-toggle]');
+  
+  // Buscar botones sin atributos especiales
+  const faqButtonsGeneral = document.querySelectorAll('.faq-question:not([onclick]):not([data-faq-toggle])');
+  
+  console.log('FAQ encontrados:', {
+    onclick: faqButtonsOnclick.length,
+    dataToggle: faqButtonsData.length,
+    general: faqButtonsGeneral.length
   });
-  console.log('FAQ inicializado:', faqButtons.length, 'botones');
+
+  // Agregar eventos a botones con data-faq-toggle
+  faqButtonsData.forEach(button => {
+    if (!button.hasAttribute('data-faq-initialized')) {
+      button.setAttribute('data-faq-initialized', 'true');
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        toggleFAQ(button);
+      });
+    }
+  });
+
+  // Agregar eventos a botones generales
+  faqButtonsGeneral.forEach(button => {
+    if (!button.hasAttribute('data-faq-initialized')) {
+      button.setAttribute('data-faq-initialized', 'true');
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        toggleFAQ(button);
+      });
+    }
+  });
+
+  const totalInicializados = faqButtonsData.length + faqButtonsGeneral.length;
+  if (totalInicializados > 0) {
+    console.log(`FAQ inicializado correctamente: ${totalInicializados} botones`);
+  } else {
+    console.warn('No se encontraron elementos FAQ para inicializar');
+  }
 }
 
-// Ejecutar inmediatamente
+// Ejecutar múltiples veces para asegurar que funcione
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initFAQ);
+  document.addEventListener('DOMContentLoaded', inicializarFAQ);
 } else {
-  initFAQ();
+  inicializarFAQ();
 }
 
-// También ejecutar con un pequeño delay para asegurar
-setTimeout(initFAQ, 50);
+// Ejecutar después de un timeout
+setTimeout(inicializarFAQ, 100);
+setTimeout(inicializarFAQ, 500);

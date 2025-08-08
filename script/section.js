@@ -16,3 +16,4 @@
       });
     }, 200); // puede ajustar este tiempo si tarda más en cargar los bloques
   });
+

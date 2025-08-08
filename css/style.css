@@ -56,7 +56,11 @@ nav {
   font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
-    justify-content: center
+    justify-content: center;
+}
+
+footer .logo {
+   justify-content: flex-start;
 }
 
 .logo img {
@@ -1117,5 +1121,6 @@ h2 {
     padding: 1rem 0.5rem 0;
   }
 }
+
 
 

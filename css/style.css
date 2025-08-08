@@ -56,6 +56,7 @@ nav {
   font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
+    justify-content: center
 }
 
 .logo img {
@@ -1116,4 +1117,5 @@ h2 {
     padding: 1rem 0.5rem 0;
   }
 }
+
 

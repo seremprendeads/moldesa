@@ -882,6 +882,14 @@ nav {
   font-size: 0.9rem;
 }
 
+    /* Tamaño específico para navbar */
+.cta-buttom-2 .whatsapp-icon {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+}
+
 
   /* ABOUT */
   .about-content {
@@ -1151,6 +1159,7 @@ nav {
     padding: 1rem 0.5rem 0;
   }
 }
+
 
 
 

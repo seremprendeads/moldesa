@@ -56,12 +56,7 @@ nav {
   font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
-    justify-content: center;
-}
-
-footer .logo {
-   justify-content: flex-start;
-}
+ }
 
 .logo img {
   height: 35px; /* Ajusta el tamaño del logo aquí */
@@ -1121,6 +1116,7 @@ h2 {
     padding: 1rem 0.5rem 0;
   }
 }
+
 
 
 

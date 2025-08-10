@@ -2,6 +2,11 @@
    Estilos específicos para
    Política, Términos y Créditos
    ================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Contenedor principal */
 .politica-container,
@@ -157,3 +162,4 @@
     padding: 1rem;
   }
 }
+

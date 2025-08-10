@@ -474,21 +474,44 @@ nav {
 }
 
 /* FAQ */
+/* FAQ - Con imagen de fondo y overlay azulado */
 .faq {
-  background: linear-gradient(to bottom, #2a4580, #131f3a);
+   position: relative;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url('https://res.cloudinary.com/dliredzt9/image/upload/v1754843141/fondo-faq_bkccyp.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+/* Overlay azulado sobre la imagen */
+.faq::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(42, 69, 128, 0.85), rgba(19, 31, 58, 0.9));
+  z-index: -1;
 }
 
 .faq-container {
+  position: relative;
+  z-index: 2;
   max-width: 800px;
   margin: 3rem auto 0;
 }
 
 .faq-item {
-  background: var(--accent-color);
+  background: rgba(229, 229, 229, 0.95); /* Fondo semi-transparente */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
   margin-bottom: 1rem;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .faq-question {
@@ -505,7 +528,7 @@ nav {
 }
 
 .faq-question:hover {
-  background: rgba(44, 85, 48, 0.1);
+  background: rgba(74, 172, 254, 0.1);
 }
 
 .faq-answer {
@@ -728,10 +751,10 @@ nav {
 }
 
 @media (max-width: 768px) {
-   .hero {
+  .hero {
+    min-height: 80vh;
+    padding: 2rem 5%;
     background-attachment: scroll;
-    background-size: 110%; // Ligeramente más grande para simular parallax
-    background-position: center top;
   }
 
   .hero-grid {

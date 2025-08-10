@@ -210,8 +210,14 @@ nav {
 }
 
 /* Botones CTA */
+/* ===== CORRECCIÓN BOTÓN HERO MÓVIL ===== */
+
+/* Botones CTA - Versión corregida */
 .cta-button-1 {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   margin-top: 2rem;
   background: var(--gradient-primary);
   color: var(--text-light);
@@ -222,7 +228,8 @@ nav {
   transition: all 0.3s ease;
   box-shadow: var(--shadow-soft);
   text-align: center;
-  max-width: 200px;
+  min-width: 200px;
+  white-space: nowrap;
 }
 
 .cta-button-1:hover {
@@ -232,6 +239,9 @@ nav {
 
 .cta-button-2 {
   display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   margin-top: 2rem;
   background: var(--gradient-primary);
   color: var(--text-light);
@@ -242,7 +252,8 @@ nav {
   transition: all 0.3s ease;
   box-shadow: var(--shadow-soft);
   text-align: center;
-  max-width: 200px;
+  min-width: 200px;
+  white-space: nowrap;
 }
 
 .cta-button-2:hover {
@@ -250,11 +261,11 @@ nav {
   box-shadow: var(--shadow-strong);
 }
 
+/* Icono WhatsApp - Versión mejorada */
 .icon-wrapper {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 0.5rem;
   flex-shrink: 0;
 }
 
@@ -748,16 +759,29 @@ nav {
     max-width: 350px;
   }
 
-  .cta-button-1 {
-    display: none;
+    .cta-button-1 {
+    display: none; /* Ocultar en móvil */
   }
 
   .cta-button-2 {
-    display: block;
-    width: 24px;
-    max-width: 200px;
+    display: inline-flex; /* Mostrar en móvil */
+    width: auto; /* Cambiar de width: 24px a auto */
+    max-width: none; /* Quitar max-width restrictivo */
+    min-width: 200px; /* Ancho mínimo adecuado */
+    padding: 1rem 2rem; /* Padding consistente */
+    font-size: 1rem; /* Tamaño de fuente adecuado */
   }
 
+  /* Asegurar que el contenedor de la imagen permita el botón */
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
 
     
   .about-content {
@@ -837,8 +861,30 @@ nav {
 }
 
 @media (max-width: 480px) {
-  .hero span {
+ .hero span {
     font-size: 3rem;
+  }
+
+  /* BOTONES EN MÓVILES PEQUEÑOS */
+  .cta-button-1 {
+    display: none;
+  }
+
+  .cta-button-2 {
+    display: inline-flex;
+    width: auto;
+    max-width: none;
+    min-width: 180px;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+  }
+
+  .whatsapp-icon {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
   }
 
   .services-grid {
@@ -873,3 +919,292 @@ nav {
 }
 
 
+/****************************************/
+/****************************************/
+/********Politicay terminos creditos*****/
+/****************************************/
+/****************************************/
+      .politicas-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header */
+        .politicas-header {
+            background: linear-gradient(135deg, #51338a 0%, #00f2fe 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .politicas-header  h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .politicas-header  p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        .politica-nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .politica-nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .politica-nav a {
+            color: #4a5568;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .politica-nav a:hover {
+            background-color: #4facfe;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .politica-nav a.active {
+            background-color: #4facfe;
+            color: white;
+        }
+
+        /* Main Content */
+        .politica-main {
+            padding: 3rem 0;
+        }
+
+        .politica-content-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 3rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .politica-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .politica-section h2 {
+            color: #2d3748;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #4facfe;
+        }
+
+        .politica-section p {
+            margin-bottom: 1rem;
+            color: #4a5568;
+        }
+
+        .politica-section ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .politica-section li {
+            margin-bottom: 0.5rem;
+            color: #4a5568;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .team-member {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-member h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member .role {
+            opacity: 0.9;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .team-member .description {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .credits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .credit-item {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            border-left: 4px solid #4facfe;
+        }
+
+        .credit-item h4 {
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .credit-item p {
+            font-size: 0.9rem;
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+        }
+
+        .credit-item a {
+            color: #4facfe;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .credit-item a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .stat-item .number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #4facfe;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item .label {
+            color: #4a5568;
+            font-size: 0.9rem;
+        }
+
+        .date {
+            font-style: italic;
+            color: #718096;
+            text-align: right;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        /* Footer */
+        .politica-footer {
+            background-color: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .politica-container {
+                padding: 0 1rem;
+            }
+
+            .politica-header h1 {
+                font-size: 2rem;
+            }
+
+            .politica-nav-container {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .politica-nav a {
+                text-align: center;
+            }
+
+            .politica-content-card {
+                padding: 1.5rem;
+            }
+
+            .politica-section h2 {
+                font-size: 1.3rem;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .credits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .politica-header {
+                padding: 2rem 0;
+            }
+
+            .politica-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .politica-content-card {
+                padding: 1rem;
+                margin: 0 0.5rem 2rem;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }

@@ -271,9 +271,10 @@ nav {
 /* Secciones */
 .section {
   padding: 10rem 8%;
-  max-width: 1400px;
+  max-width: 2000px;
   margin: 0 auto;
   background-color: var(--primary-color);
+  
 }
 
 .section-title-izquierdo {
@@ -2081,6 +2082,7 @@ nav {
     max-width: 100%;
   }
 }
+
 
 
 

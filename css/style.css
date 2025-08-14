@@ -699,6 +699,9 @@ nav {
 
   .menu-toggle {
        display: flex !important;
+      background: black;
+        padding: 10px;
+        border-radius: 12px;
   }
 
     .cta-button-1 {
@@ -2086,6 +2089,7 @@ nav {
     max-width: 100%;
   }
 }
+
 
 
 

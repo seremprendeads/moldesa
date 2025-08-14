@@ -312,6 +312,11 @@ nav {
   margin-right: auto;
 }
 
+.section-nosotros,
+.section-moldes {
+    max-width: 2000px;
+}
+
 /* Nosotros */
 .section-nosotros {
   background-color: #14213D;
@@ -2082,6 +2087,7 @@ nav {
     max-width: 100%;
   }
 }
+
 
 
 

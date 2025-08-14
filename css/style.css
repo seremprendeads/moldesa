@@ -1232,3 +1232,1017 @@ nav {
                 grid-template-columns: 1fr;
             }
         }
+
+/* ===== OPTIMIZACIÓN PARA DISPOSITIVOS GRANDES Y SMART TVs ===== */
+
+/* Para tablets grandes y pantallas medianas (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    .container {
+        max-width: 100%;
+        padding: 0 2rem;
+    }
+    
+    .hero-title {
+        font-size: 4.5rem;
+        line-height: 1.1;
+    }
+    
+    .hero-description {
+        font-size: 1.3rem;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .target-title {
+        font-size: 2rem;
+    }
+}
+
+/* Para pantallas de escritorio (1024px - 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    
+    .container {
+        max-width: 1200px;
+        padding: 0 3rem;
+    }
+    
+    .hero {
+        padding: 10rem 2rem 10rem;
+    }
+    
+    .hero-title {
+        font-size: 5rem;
+        line-height: 1.05;
+    }
+    
+    .hero-description {
+        font-size: 1.4rem;
+        line-height: 1.7;
+    }
+    
+    .hero-images {
+        min-height: 400px;
+    }
+    
+    .hero-image-1 {
+        width: 85%;
+        max-width: 500px;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .target-title {
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
+    
+    .target-description {
+        font-size: 1.3rem;
+        max-width: 900px;
+    }
+    
+    .feature-title {
+        font-size: 1.7rem;
+    }
+    
+    .feature-description {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    
+    .service-title {
+        font-size: 1.3rem;
+    }
+    
+    .service-description {
+        font-size: 1rem;
+        padding: 0 2rem;
+    }
+    
+    .maps-title {
+        font-size: 3.5rem;
+    }
+    
+    .maps-subtitle {
+        font-size: 1.8rem;
+    }
+    
+    .maps-list,
+    .maps-benefits-list {
+        font-size: 1.3rem;
+    }
+    
+    .security-card-title {
+        font-size: 1.4rem;
+    }
+    
+    .security-card-description {
+        font-size: 1.1rem;
+    }
+    
+    .banner-quote {
+        font-size: 2.5rem;
+    }
+    
+    .banner-author {
+        font-size: 1.4rem;
+    }
+}
+
+/* Para pantallas grandes (1440px - 1919px) */
+@media (min-width: 1440px) and (max-width: 1919px) {
+    
+    .container {
+        max-width: 1400px;
+        padding: 0 4rem;
+    }
+    
+    .hero {
+        padding: 12rem 3rem 12rem;
+    }
+    
+    .hero-title {
+        font-size: 6rem;
+        line-height: 1.05;
+    }
+    
+    .hero-description {
+        font-size: 1.5rem;
+        line-height: 1.8;
+        max-width: 650px;
+    }
+    
+    .hero-images {
+        min-height: 500px;
+    }
+    
+    .hero-image-1 {
+        width: 80%;
+        max-width: 600px;
+    }
+    
+    .section-title {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .target-section {
+        padding: 4rem 0 5rem;
+    }
+    
+    .target-title {
+        font-size: 2.5rem;
+        line-height: 1.3;
+        margin-bottom: 2rem;
+    }
+    
+    .target-description {
+        font-size: 1.4rem;
+        max-width: 1000px;
+        line-height: 1.7;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        margin-top: 4rem;
+    }
+    
+    .feature-icon {
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    .feature-title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .feature-description {
+        font-size: 1.2rem;
+        padding: 0 1.5rem;
+        line-height: 1.6;
+    }
+    
+    .services {
+        padding: 3rem 0 5rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+    }
+    
+    .service-icon {
+        height: 4rem;
+        width: 4rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .service-title {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .service-description {
+        font-size: 1.1rem;
+        padding: 0 2rem;
+        line-height: 1.6;
+    }
+    
+    .motivational-banner {
+        padding: 8rem 0;
+    }
+    
+    .banner-quote {
+        font-size: 3rem;
+        line-height: 1.3;
+        margin-bottom: 2rem;
+    }
+    
+    .banner-author {
+        font-size: 1.5rem;
+    }
+    
+    .maps-title {
+        font-size: 4rem;
+    }
+    
+    .maps-content {
+        max-width: 70rem;
+        padding: 4rem;
+    }
+    
+    .maps-subtitle {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .maps-list,
+    .maps-benefits-list {
+        font-size: 1.4rem;
+    }
+    
+    .maps-benefits-title {
+        font-size: 2rem;
+    }
+    
+    .maps-benefits-description {
+        font-size: 1.3rem;
+    }
+    
+    .security {
+        padding: 4rem 2rem 6rem;
+    }
+    
+    .security-title {
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+    }
+    
+    .security-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+    
+    .security-card {
+        padding: 3rem 2rem;
+    }
+    
+    .security-icon img {
+        width: 8rem;
+        height: 8rem;
+    }
+    
+    .security-card-title {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .security-card-description {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+    
+    .designs {
+        padding: 4rem 0;
+    }
+    
+    .designs-title {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+    
+    .designs-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .cards-section {
+        padding: 4rem 2rem;
+    }
+    
+    .container-cards {
+        max-width: 1300px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .card {
+        padding: 2rem;
+    }
+    
+    .card h3 {
+        font-size: 1.6rem;
+    }
+    
+    .testimonials-title {
+        font-size: 2.5rem;
+        padding: 3rem;
+    }
+    
+    .testimonial-text {
+        font-size: 1.3rem;
+    }
+    
+    .faq {
+        padding: 6rem 0;
+    }
+    
+    .faq-title {
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+    }
+    
+    .faq-list {
+        padding: 0 8rem;
+    }
+    
+    .faq-question {
+        font-size: 1.4rem;
+        padding: 1.5rem 1rem;
+    }
+    
+    .faq-answer p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+    
+    .contact {
+        padding: 4rem 0;
+    }
+    
+    .contact-title {
+        font-size: 3.5rem;
+    }
+    
+    .contact-description {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+    
+    .contact-logo-img img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .guarantee-image img {
+        height: 14rem;
+    }
+    
+    .contact-button {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* Para pantallas ultra anchas y Smart TVs (1920px+) */
+@media (min-width: 1920px) {
+    
+    .container {
+        max-width: 1800px;
+        padding: 0 6rem;
+    }
+    
+    .hero {
+        padding: 15rem 4rem 15rem;
+    }
+    
+    .hero-title {
+        font-size: 7rem;
+        line-height: 1.05;
+    }
+    
+    .hero-description {
+        font-size: 1.7rem;
+        line-height: 1.8;
+        max-width: 750px;
+    }
+    
+    .hero-images {
+        min-height: 600px;
+    }
+    
+    .hero-image-1 {
+        width: 75%;
+        max-width: 700px;
+    }
+    
+    .section-title {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+    
+    .target-section {
+        padding: 6rem 0 8rem;
+    }
+    
+    .target-title {
+        font-size: 3rem;
+        line-height: 1.3;
+        margin-bottom: 3rem;
+    }
+    
+    .target-description {
+        font-size: 1.6rem;
+        max-width: 1200px;
+        line-height: 1.8;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+        margin-top: 6rem;
+    }
+    
+    .feature-icon {
+        width: 7rem;
+        height: 7rem;
+    }
+    
+    .feature-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .feature-description {
+        font-size: 1.4rem;
+        padding: 0 2rem;
+        line-height: 1.7;
+    }
+    
+    .services {
+        padding: 4rem 0 8rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6rem;
+    }
+    
+    .service-icon {
+        height: 5rem;
+        width: 5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .service-title {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .service-description {
+        font-size: 1.3rem;
+        padding: 0 3rem;
+        line-height: 1.7;
+    }
+    
+    .motivational-banner {
+        padding: 10rem 0;
+    }
+    
+    .banner-quote {
+        font-size: 3.5rem;
+        line-height: 1.3;
+        margin-bottom: 3rem;
+    }
+    
+    .banner-author {
+        font-size: 1.7rem;
+    }
+    
+    .maps-title {
+        font-size: 5rem;
+        line-height: 1.2;
+    }
+    
+    .maps-content {
+        max-width: 80rem;
+        padding: 6rem;
+    }
+    
+    .maps-subtitle {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+    
+    .maps-list,
+    .maps-benefits-list {
+        font-size: 1.6rem;
+        line-height: 1.8;
+    }
+    
+    .maps-benefits-title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .maps-benefits-description {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .security {
+        padding: 6rem 3rem 10rem;
+    }
+    
+    .security-title {
+        font-size: 3rem;
+        margin-bottom: 6rem;
+    }
+    
+    .security-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    
+    .security-card {
+        padding: 4rem 3rem;
+    }
+    
+    .security-icon img {
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    .security-card-title {
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        line-height: 1.4;
+    }
+    
+    .security-card-description {
+        font-size: 1.4rem;
+        line-height: 1.7;
+        margin-top: 1.5rem;
+    }
+    
+    .designs {
+        padding: 6rem 0;
+    }
+    
+    .designs-title {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+    
+    .designs-container {
+        padding: 2rem 4rem;
+    }
+    
+    .designs-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    .designs-grid img {
+        max-width: 450px;
+        border-radius: 1rem;
+    }
+    
+    .cards-section {
+        padding: 6rem 3rem;
+    }
+    
+    .container-cards {
+        max-width: 1600px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+    
+    .card {
+        padding: 3rem 2rem;
+        border-radius: 1rem;
+    }
+    
+    .card img {
+        height: 250px;
+        border-radius: 0.5rem;
+    }
+    
+    .card h3 {
+        font-size: 1.8rem;
+        margin: 20px 0 15px;
+    }
+    
+    .testimonials {
+        padding: 2rem 0;
+    }
+    
+    .testimonials-title {
+        font-size: 3rem;
+        padding: 4rem;
+    }
+    
+    .slide {
+        padding: 3rem;
+    }
+    
+    .testimonial-text {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .testimonial-avatar {
+        height: 4rem;
+        width: 4rem;
+    }
+    
+    .testimonial-name {
+        font-size: 1.1rem;
+    }
+    
+    .testimonial-role {
+        font-size: 1rem;
+    }
+    
+    .faq {
+        padding: 8rem 0;
+    }
+    
+    .faq-title {
+        font-size: 3rem;
+        margin-bottom: 6rem;
+    }
+    
+    .faq-list {
+        padding: 0 15rem;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    
+    .faq-item {
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+    }
+    
+    .faq-question {
+        font-size: 1.6rem;
+        padding: 2rem 1.5rem;
+        line-height: 1.4;
+    }
+    
+    .faq-answer {
+        padding: 0 1.5rem 2rem;
+    }
+    
+    .faq-answer p {
+        font-size: 1.3rem;
+        line-height: 1.8;
+    }
+    
+    .whatsapp-button {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        min-height: 56px;
+    }
+    
+    .whatsapp-svg {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    
+    .contact {
+        padding: 6rem 0;
+    }
+    
+    .contact-title {
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+    
+    .contact-description {
+        font-size: 2.2rem;
+        line-height: 1.5;
+        margin-bottom: 3rem;
+    }
+    
+    .contact-logo-img img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .guarantee-image img {
+        height: 16rem;
+    }
+    
+    .contact-button-container {
+        margin-top: 4rem;
+    }
+    
+    .contact-button {
+        padding: 1.2rem 2.5rem;
+        font-size: 1.4rem;
+        min-height: 64px;
+        border-radius: 60px;
+    }
+    
+    .contact-button svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .contact-avatar {
+        height: 3.5rem;
+        width: 3.5rem;
+        margin-left: -0.75rem;
+    }
+    
+    .contact-value span {
+        font-size: 1.6rem;
+    }
+    
+    .footer-content {
+        padding: 0 4rem;
+    }
+    
+    .footer-grid {
+        padding-top: 4rem;
+        margin-bottom: 6rem;
+        gap: 4rem;
+    }
+    
+    .footer-logo img {
+        height: 4rem;
+    }
+    
+    .footer-brand-name {
+        font-size: 1.2rem;
+    }
+    
+    .footer-brand-tagline {
+        font-size: 1rem;
+    }
+    
+    .footer-description {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-nav-title {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer-nav {
+        gap: 1.2rem;
+    }
+    
+    .footer-nav a {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .footer-bottom {
+        padding: 3rem 0;
+        font-size: 1rem;
+    }
+    
+    /* Botones más grandes para mejor usabilidad */
+    .btn-primary {
+        padding: 1.2rem 3rem;
+        font-size: 1.3rem;
+        min-height: 60px;
+        border-radius: 60px;
+    }
+    
+    .cta-button {
+        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
+        min-height: 56px;
+    }
+    
+    .whatsapp-icon {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+/* Para Smart TVs y pantallas ultra anchas (2560px+) */
+@media (min-width: 2560px) {
+    
+    .container {
+        max-width: 2200px;
+        padding: 0 8rem;
+    }
+    
+    .hero-title {
+        font-size: 8rem;
+        line-height: 1.1;
+    }
+    
+    .hero-description {
+        font-size: 2rem;
+        max-width: 900px;
+        line-height: 1.8;
+    }
+    
+    .section-title {
+        font-size: 5rem;
+        margin-bottom: 4rem;
+    }
+    
+    .target-title {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+    }
+    
+    .target-description {
+        font-size: 1.8rem;
+        max-width: 1400px;
+        line-height: 1.8;
+    }
+    
+    .feature-title {
+        font-size: 2.3rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .feature-description {
+        font-size: 1.6rem;
+        line-height: 1.7;
+    }
+    
+    .service-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .service-description {
+        font-size: 1.5rem;
+        line-height: 1.7;
+    }
+    
+    .banner-quote {
+        font-size: 4rem;
+        line-height: 1.3;
+    }
+    
+    .banner-author {
+        font-size: 2rem;
+    }
+    
+    .maps-title {
+        font-size: 6rem;
+        line-height: 1.2;
+    }
+    
+    .security-title,
+    .designs-title,
+    .testimonials-title,
+    .faq-title {
+        font-size: 3.5rem;
+        margin-bottom: 4rem;
+    }
+    
+    .contact-title {
+        font-size: 5rem;
+        line-height: 1.2;
+    }
+    
+    .contact-description {
+        font-size: 2.5rem;
+        line-height: 1.5;
+    }
+    
+    /* Espaciado aumentado para pantallas grandes */
+    .features-grid,
+    .services-grid,
+    .security-grid {
+        gap: 8rem;
+    }
+    
+    .designs-grid,
+    .container-cards {
+        gap: 4rem;
+    }
+    
+    /* Padding y margin aumentados para mejor proporción */
+    .hero {
+        padding: 18rem 5rem 18rem;
+    }
+    
+    .about,
+    .services {
+        padding: 8rem 0;
+    }
+    
+    .target-section {
+        padding
+
+/* Optimización específica para TV en modo landscape */
+@media (orientation: landscape) and (min-width: 1920px) {
+    
+    .hero-content {
+        align-items: center;
+        min-height: 80vh;
+    }
+    
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .hero-images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Asegurar que las secciones ocupen bien el espacio vertical */
+    .about,
+    .target-section,
+    .services,
+    .security {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .about .container,
+    .target-section .container,
+    .services .container,
+    .security .container {
+        width: 100%;
+    }
+}
+
+/* Mejoras generales para todas las pantallas grandes */
+@media (min-width: 1024px) {
+    
+    /* Mejor espaciado entre secciones */
+    section {
+        scroll-margin-top: 100px;
+    }
+    
+    /* Hover effects más suaves para pantallas grandes */
+    .btn-primary:hover,
+    .cta-button:hover,
+    .contact-button:hover {
+        transform: translateY(-3px);
+        transition: all 0.3s ease;
+    }
+    
+    .designs-grid img:hover {
+        transform: scale(1.08);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+    
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Mejor legibilidad en pantallas grandes */
+    body {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+    
+    /* Navegación fija mejorada */
+    .header {
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    
+    /* Scroll behavior mejorado */
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px;
+    }
+}
+

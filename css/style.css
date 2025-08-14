@@ -461,11 +461,10 @@ nav {
 /* FAQ */
 /* FAQ - Con imagen de fondo y overlay azulado */
 .faq {
-   position: relative;
+  position: relative;
   align-items: center;
   justify-content: center;
-
-  background-image: url('https://res.cloudinary.com/dliredzt9/image/upload/v1754843141/fondo-faq_bkccyp.webp');
+  background-image: url('https://res.cloudinary.com/dliredzt9/image/upload/v1755187963/fondo-faq_yrhm5q.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -473,20 +472,12 @@ nav {
   z-index: 1;
 }
 
-/* Overlay azulado sobre la imagen */
-.faq::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(42, 69, 128, 0.85), rgba(19, 31, 58, 0.9));
-  z-index: -1;
-}
 
 .faq-container {
   position: relative;
   z-index: 2;
   max-width: 800px;
-  margin: 3rem auto 0;
+ 
 }
 
 .faq-item {
@@ -2090,4 +2081,5 @@ nav {
     max-width: 100%;
   }
 }
+
 

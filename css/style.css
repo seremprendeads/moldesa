@@ -477,7 +477,7 @@ nav {
   position: relative;
   z-index: 2;
   max-width: 800px;
- 
+  margin: 3rem auto 0;
 }
 
 .faq-item {
@@ -2081,5 +2081,6 @@ nav {
     max-width: 100%;
   }
 }
+
 
 

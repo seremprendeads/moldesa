@@ -534,7 +534,6 @@ nav {
   color: var(--text-light);
   text-align: center;
   padding: 4rem 5%;
-  margin-top: 4rem;
 }
 
 .cta-section h3 {
@@ -2087,6 +2086,7 @@ nav {
     max-width: 100%;
   }
 }
+
 
 
 

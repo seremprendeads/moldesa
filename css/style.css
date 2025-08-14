@@ -1623,626 +1623,485 @@ nav {
     }
 }
 
-/* Para pantallas ultra anchas y Smart TVs (1920px+) */
-@media (min-width: 1920px) {
-    
-    .container {
-        max-width: 1800px;
-        padding: 0 6rem;
-    }
-    
-    .hero {
-        padding: 15rem 4rem 15rem;
-    }
-    
-    .hero-title {
-        font-size: 7rem;
-        line-height: 1.05;
-    }
-    
-    .hero-description {
-        font-size: 1.7rem;
-        line-height: 1.8;
-        max-width: 750px;
-    }
-    
-    .hero-images {
-        min-height: 600px;
-    }
-    
-    .hero-image-1 {
-        width: 75%;
-        max-width: 700px;
-    }
-    
-    .section-title {
-        font-size: 4rem;
-        margin-bottom: 3rem;
-    }
-    
-    .target-section {
-        padding: 6rem 0 8rem;
-    }
-    
-    .target-title {
-        font-size: 3rem;
-        line-height: 1.3;
-        margin-bottom: 3rem;
-    }
-    
-    .target-description {
-        font-size: 1.6rem;
-        max-width: 1200px;
-        line-height: 1.8;
-    }
-    
-    .features-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5rem;
-        margin-top: 6rem;
-    }
-    
-    .feature-icon {
-        width: 7rem;
-        height: 7rem;
-    }
-    
-    .feature-title {
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .feature-description {
-        font-size: 1.4rem;
-        padding: 0 2rem;
-        line-height: 1.7;
-    }
-    
-    .services {
-        padding: 4rem 0 8rem;
-    }
-    
-    .services-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 6rem;
-    }
-    
-    .service-icon {
-        height: 5rem;
-        width: 5rem;
-        margin-bottom: 2rem;
-    }
-    
-    .service-title {
-        font-size: 1.6rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .service-description {
-        font-size: 1.3rem;
-        padding: 0 3rem;
-        line-height: 1.7;
-    }
-    
-    .motivational-banner {
-        padding: 10rem 0;
-    }
-    
-    .banner-quote {
-        font-size: 3.5rem;
-        line-height: 1.3;
-        margin-bottom: 3rem;
-    }
-    
-    .banner-author {
-        font-size: 1.7rem;
-    }
-    
-    .maps-title {
-        font-size: 5rem;
-        line-height: 1.2;
-    }
-    
-    .maps-content {
-        max-width: 80rem;
-        padding: 6rem;
-    }
-    
-    .maps-subtitle {
-        font-size: 2.5rem;
-        margin-bottom: 3rem;
-    }
-    
-    .maps-list,
-    .maps-benefits-list {
-        font-size: 1.6rem;
-        line-height: 1.8;
-    }
-    
-    .maps-benefits-title {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-    }
-    
-    .maps-benefits-description {
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
-    }
-    
-    .security {
-        padding: 6rem 3rem 10rem;
-    }
-    
-    .security-title {
-        font-size: 3rem;
-        margin-bottom: 6rem;
-    }
-    
-    .security-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 4rem;
-        max-width: 1600px;
-        margin: 0 auto;
-    }
-    
-    .security-card {
-        padding: 4rem 3rem;
-    }
-    
-    .security-icon img {
-        width: 10rem;
-        height: 10rem;
-    }
-    
-    .security-card-title {
-        font-size: 1.8rem;
-        margin-top: 2rem;
-        line-height: 1.4;
-    }
-    
-    .security-card-description {
-        font-size: 1.4rem;
-        line-height: 1.7;
-        margin-top: 1.5rem;
-    }
-    
-    .designs {
-        padding: 6rem 0;
-    }
-    
-    .designs-title {
-        font-size: 3rem;
-        margin-bottom: 4rem;
-    }
-    
-    .designs-container {
-        padding: 2rem 4rem;
-    }
-    
-    .designs-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
-        max-width: 1400px;
-        margin: 0 auto;
-    }
-    
-    .designs-grid img {
-        max-width: 450px;
-        border-radius: 1rem;
-    }
-    
-    .cards-section {
-        padding: 6rem 3rem;
-    }
-    
-    .container-cards {
-        max-width: 1600px;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
-    }
-    
-    .card {
-        padding: 3rem 2rem;
-        border-radius: 1rem;
-    }
-    
-    .card img {
-        height: 250px;
-        border-radius: 0.5rem;
-    }
-    
-    .card h3 {
-        font-size: 1.8rem;
-        margin: 20px 0 15px;
-    }
-    
-    .testimonials {
-        padding: 2rem 0;
-    }
-    
-    .testimonials-title {
-        font-size: 3rem;
-        padding: 4rem;
-    }
-    
-    .slide {
-        padding: 3rem;
-    }
-    
-    .testimonial-text {
-        font-size: 1.5rem;
-        line-height: 1.6;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-    
-    .testimonial-avatar {
-        height: 4rem;
-        width: 4rem;
-    }
-    
-    .testimonial-name {
-        font-size: 1.1rem;
-    }
-    
-    .testimonial-role {
-        font-size: 1rem;
-    }
-    
-    .faq {
-        padding: 8rem 0;
-    }
-    
-    .faq-title {
-        font-size: 3rem;
-        margin-bottom: 6rem;
-    }
-    
-    .faq-list {
-        padding: 0 15rem;
-        max-width: 1600px;
-        margin: 0 auto;
-    }
-    
-    .faq-item {
-        margin-bottom: 2rem;
-        border-radius: 1rem;
-    }
-    
-    .faq-question {
-        font-size: 1.6rem;
-        padding: 2rem 1.5rem;
-        line-height: 1.4;
-    }
-    
-    .faq-answer {
-        padding: 0 1.5rem 2rem;
-    }
-    
-    .faq-answer p {
-        font-size: 1.3rem;
-        line-height: 1.8;
-    }
-    
-    .whatsapp-button {
-        padding: 1rem 2rem;
-        font-size: 1.2rem;
-        min-height: 56px;
-    }
-    
-    .whatsapp-svg {
-        height: 2.5rem;
-        width: 2.5rem;
-    }
-    
-    .contact {
-        padding: 6rem 0;
-    }
-    
-    .contact-title {
-        font-size: 4rem;
-        line-height: 1.2;
-    }
-    
-    .contact-description {
-        font-size: 2.2rem;
-        line-height: 1.5;
-        margin-bottom: 3rem;
-    }
-    
-    .contact-logo-img img {
-        width: 250px;
-        height: 250px;
-    }
-    
-    .guarantee-image img {
-        height: 16rem;
-    }
-    
-    .contact-button-container {
-        margin-top: 4rem;
-    }
-    
-    .contact-button {
-        padding: 1.2rem 2.5rem;
-        font-size: 1.4rem;
-        min-height: 64px;
-        border-radius: 60px;
-    }
-    
-    .contact-button svg {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .contact-avatar {
-        height: 3.5rem;
-        width: 3.5rem;
-        margin-left: -0.75rem;
-    }
-    
-    .contact-value span {
-        font-size: 1.6rem;
-    }
-    
-    .footer-content {
-        padding: 0 4rem;
-    }
-    
-    .footer-grid {
-        padding-top: 4rem;
-        margin-bottom: 6rem;
-        gap: 4rem;
-    }
-    
-    .footer-logo img {
-        height: 4rem;
-    }
-    
-    .footer-brand-name {
-        font-size: 1.2rem;
-    }
-    
-    .footer-brand-tagline {
-        font-size: 1rem;
-    }
-    
-    .footer-description {
-        font-size: 0.9rem;
-        margin-bottom: 2rem;
-    }
-    
-    .footer-nav-title {
-        font-size: 1.1rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .footer-nav {
-        gap: 1.2rem;
-    }
-    
-    .footer-nav a {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-    
-    .footer-bottom {
-        padding: 3rem 0;
-        font-size: 1rem;
-    }
-    
-    /* Botones más grandes para mejor usabilidad */
-    .btn-primary {
-        padding: 1.2rem 3rem;
-        font-size: 1.3rem;
-        min-height: 60px;
-        border-radius: 60px;
-    }
-    
-    .cta-button {
-        padding: 1rem 1.5rem;
-        font-size: 1.1rem;
-        min-height: 56px;
-    }
-    
-    .whatsapp-icon {
-        height: 2rem;
-        width: 2rem;
-    }
+/* ===== CORRECCIONES ESPECÍFICAS PARA MÓVILES GRANDES ===== */
+
+/* Tablets en orientación vertical (768px - 1023px) */
+@media (max-width: 1023px) and (min-width: 769px) {
+  
+  /* Header */
+  .fijo {
+    width: 100%;
+    padding: 1rem 3%;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 2rem 3%;
+    min-height: 100vh;
+  }
+
+  .hero-grid {
+    max-width: 100%;
+    width: 100%;
+    gap: 3rem;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-text span {
+    font-size: clamp(3.5rem, 8vw, 5rem);
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    padding: 0;
+    margin: 1.5rem 0 2.5rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  /* Botones CTA */
+  .cta-button-1 {
+    display: inline-block;
+    width: auto;
+    max-width: 300px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .cta-button-2 {
+    display: none;
+  }
+
+  /* Secciones */
+  .section {
+    padding: 5rem 3%;
+    width: 100%;
+  }
+
+  .section-title-center,
+  .section-title-izquierdo {
+    font-size: 2.2rem;
+  }
+
+  /* About Content */
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  /* Services Grid */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .service-card {
+    width: 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  .service-card-uno-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .service-card-uno {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem;
+  }
+
+  /* Testimoniales */
+  .testimonials-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .testimonial {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  /* FAQ */
+  .faq-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  /* CTA Section */
+  .cta-section {
+    padding: 4rem 3%;
+    width: 100%;
+  }
+
+  .cta-section h3 {
+    font-size: 2rem;
+    padding: 0 2rem;
+  }
+
+  .cta-section p {
+    padding: 0 2rem;
+    font-size: 1.1rem;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .footer-logo-section {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 0;
+  }
+
+  .footer-logo-description {
+    padding-right: 0;
+  }
 }
 
-/* Para Smart TVs y pantallas ultra anchas (2560px+) */
-@media (min-width: 2560px) {
-    
-    .container {
-        max-width: 2200px;
-        padding: 0 8rem;
-    }
-    
-    .hero-title {
-        font-size: 8rem;
-        line-height: 1.1;
-    }
-    
-    .hero-description {
-        font-size: 2rem;
-        max-width: 900px;
-        line-height: 1.8;
-    }
-    
-    .section-title {
-        font-size: 5rem;
-        margin-bottom: 4rem;
-    }
-    
-    .target-title {
-        font-size: 3.5rem;
-        margin-bottom: 3rem;
-    }
-    
-    .target-description {
-        font-size: 1.8rem;
-        max-width: 1400px;
-        line-height: 1.8;
-    }
-    
-    .feature-title {
-        font-size: 2.3rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .feature-description {
-        font-size: 1.6rem;
-        line-height: 1.7;
-    }
-    
-    .service-title {
-        font-size: 1.8rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .service-description {
-        font-size: 1.5rem;
-        line-height: 1.7;
-    }
-    
-    .banner-quote {
-        font-size: 4rem;
-        line-height: 1.3;
-    }
-    
-    .banner-author {
-        font-size: 2rem;
-    }
-    
-    .maps-title {
-        font-size: 6rem;
-        line-height: 1.2;
-    }
-    
-    .security-title,
-    .designs-title,
-    .testimonials-title,
-    .faq-title {
-        font-size: 3.5rem;
-        margin-bottom: 4rem;
-    }
-    
-    .contact-title {
-        font-size: 5rem;
-        line-height: 1.2;
-    }
-    
-    .contact-description {
-        font-size: 2.5rem;
-        line-height: 1.5;
-    }
-    
-    /* Espaciado aumentado para pantallas grandes */
-    .features-grid,
-    .services-grid,
-    .security-grid {
-        gap: 8rem;
-    }
-    
-    .designs-grid,
-    .container-cards {
-        gap: 4rem;
-    }
-    
-    /* Padding y margin aumentados para mejor proporción */
-    .hero {
-        padding: 18rem 5rem 18rem;
-    }
-    
-    .about,
-    .services {
-        padding: 8rem 0;
-    }
-    
-    .target-section {
-        padding
+/* ===== MÓVILES ESTÁNDAR (481px - 768px) ===== */
+@media (max-width: 768px) and (min-width: 481px) {
 
-/* Optimización específica para TV en modo landscape */
-@media (orientation: landscape) and (min-width: 1920px) {
-    
-    .hero-content {
-        align-items: center;
-        min-height: 80vh;
-    }
-    
-    .hero-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .hero-images {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    /* Asegurar que las secciones ocupen bien el espacio vertical */
-    .about,
-    .target-section,
-    .services,
-    .security {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-    }
-    
-    .about .container,
-    .target-section .container,
-    .services .container,
-    .security .container {
-        width: 100%;
-    }
+  /* Asegurar ancho completo */
+  .hero,
+  .section,
+  .cta-section {
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .hero {
+    min-height: 90vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-grid {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2.5rem;
+  }
+
+  .hero-text {
+    width: 100%;
+    order: 1;
+    padding-top: 80px;
+  }
+
+  .hero-text span {
+    font-size: clamp(3rem, 10vw, 4.5rem);
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
+    padding: 0 1rem;
+    margin: 1.5rem 0 2rem;
+  }
+
+  .hero-image {
+    order: 2;
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  /* Botones en móviles grandes */
+  .cta-button-1 {
+    display: none;
+  }
+
+  .cta-button-2 {
+    display: inline-block;
+    width: auto;
+    max-width: 320px;
+    padding: 1rem 1.8rem;
+    font-size: 1rem;
+    margin: 1.5rem auto 0;
+  }
+
+  /* Services Grid para móviles grandes */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .service-card {
+    padding: 1.8rem 1.2rem;
+  }
+
+  .service-card h2 {
+    font-size: 1.3rem;
+    padding: 15px 15px 0;
+  }
+
+  /* Testimoniales */
+  .testimonials-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Footer optimizado */
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-logo-section {
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  /* CTA Section */
+  .cta-section h3 {
+    padding: 0 1rem;
+    font-size: 1.8rem;
+  }
+
+  .cta-section p {
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
 }
 
-/* Mejoras generales para todas las pantallas grandes */
-@media (min-width: 1024px) {
-    
-    /* Mejor espaciado entre secciones */
-    section {
-        scroll-margin-top: 100px;
-    }
-    
-    /* Hover effects más suaves para pantallas grandes */
-    .btn-primary:hover,
-    .cta-button:hover,
-    .contact-button:hover {
-        transform: translateY(-3px);
-        transition: all 0.3s ease;
-    }
-    
-    .designs-grid img:hover {
-        transform: scale(1.08);
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    }
-    
-    .card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    }
-    
-    /* Mejor legibilidad en pantallas grandes */
-    body {
-        font-size: 18px;
-        line-height: 1.7;
-    }
-    
-    /* Navegación fija mejorada */
-    .header {
-        backdrop-filter: blur(10px);
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-    
-    /* Scroll behavior mejorado */
-    html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 100px;
-    }
+/* ===== MÓVILES PEQUEÑOS (hasta 480px) ===== */
+@media (max-width: 480px) {
+
+  /* Padding más ajustado pero asegurando ancho completo */
+  .hero,
+  .section,
+  .cta-section {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .hero {
+    min-height: 85vh;
+  }
+
+  .hero-text span {
+    font-size: clamp(2.5rem, 12vw, 3.5rem);
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1rem, 5vw, 1.4rem);
+    padding: 0 0.5rem;
+  }
+
+  .hero-image img {
+    max-width: 350px;
+    width: 90%;
+  }
+
+  .cta-button-2 {
+    max-width: 280px;
+    padding: 0.9rem 1.4rem;
+    font-size: 0.95rem;
+  }
+
+  /* Services Grid una columna en móviles pequeños */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .service-card-uno {
+    padding: 1.5rem;
+  }
+
+  /* Footer una columna */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* CTA Section ajustada */
+  .cta-section h3 {
+    font-size: 1.6rem;
+    padding: 0 0.5rem;
+  }
+
+  .cta-section p {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
 }
 
+/* ===== CORRECCIÓN ESPECÍFICA PARA NAVEGACIÓN MÓVIL ===== */
+@media (max-width: 1023px) {
+  
+  .nav-links {
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 2rem 5%;
+  }
+
+  .nav-links.active {
+    width: 100%;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .cta-button {
+    width: auto;
+    max-width: 280px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/* ===== ASEGURAR QUE NO HAYA OVERFLOW HORIZONTAL ===== */
+.hero-grid,
+.about-content,
+.services-grid,
+.testimonials-container,
+.faq-container,
+.footer-content {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* ===== OPTIMIZACIÓN PARA LANDSCSAPE EN MÓVILES ===== */
+@media (max-width: 768px) and (orientation: landscape) {
+  
+  .hero {
+    min-height: 100vh;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .hero-text {
+    order: 1;
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .hero-image {
+    order: 2;
+    padding-top: 0;
+  }
+
+  .hero-text span {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+  }
+
+  .cta-button-2 {
+    max-width: 220px;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== MEJORAS ADICIONALES PARA TODOS LOS DISPOSITIVOS MÓVILES ===== */
+@media (max-width: 1023px) {
+  
+  /* Mejorar la usabilidad táctil */
+  button,
+  a,
+  .faq-question {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Espaciado mejorado */
+  .section {
+    margin-bottom: 0;
+  }
+
+  .section + .section {
+    padding-top: 4rem;
+  }
+
+  /* Iconos WhatsApp */
+  .whatsapp-icon {
+    width: 18px !important;
+    height: 18px !important;
+    min-width: 18px;
+    min-height: 18px;
+  }
+
+  /* FAQ mejorado */
+  .faq-container {
+    margin: 2rem auto 0;
+    padding: 0 1rem;
+  }
+
+  .faq-question {
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    padding: 1.2rem 1rem;
+    line-height: 1.4;
+  }
+
+  .faq-answer p {
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    line-height: 1.6;
+  }
+}
+
+/* ===== CORRECCIÓN FINAL PARA EVITAR SCROLL HORIZONTAL ===== */
+@media (max-width: 1023px) {
+  html {
+    overflow-x: hidden;
+  }
+  
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  * {
+    max-width: 100%;
+  }
+}

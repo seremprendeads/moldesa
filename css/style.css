@@ -884,11 +884,11 @@
             }
 
             .hero h1 {
-                font-size: 1.4rem;
+                font-size: 1rem;
                 padding: 0 20px 0 20px;
             }
             .hero p {
-                font-size: 4rem;
+                font-size: 3rem;
                 padding: 0 20px 0 20px;
             }
 .cta-button-desktop,
@@ -1897,6 +1897,7 @@
                 grid-template-columns: 1fr;
             }
         }
+
 
 
 

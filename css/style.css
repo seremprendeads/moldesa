@@ -884,7 +884,7 @@
             }
 
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
                 padding: 0 20px 0 20px;
             }
             .hero p {
@@ -955,9 +955,7 @@
                 padding: 0 1rem;
             }
 
-            .hero h1 {
-                font-size: 2rem;
-            }
+       
 .cta-button-desktop,
 .cta-button-mobile {
     margin-top: 60px;
@@ -977,3 +975,4 @@
                 grid-template-columns: 1fr;
             }
         }
+

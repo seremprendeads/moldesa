@@ -853,7 +853,7 @@ body {
     }
 
     .hero h1 {
-        font-size: 2.9rem;
+        font-size: 2rem;
         padding: 0 20px;
     }
 
@@ -947,4 +947,5 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 

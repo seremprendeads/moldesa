@@ -241,7 +241,6 @@ body {
 
   .testimonial-card {
     background: #fff;
-    border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
@@ -254,6 +253,7 @@ body {
     margin: 0 auto 15px;
     display: block;
     border: 3px solid #eee;
+          border-radius: 12px;
   }
 
   .testimonial-text {
@@ -989,6 +989,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 

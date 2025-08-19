@@ -171,6 +171,7 @@ body {
     font-size: 6rem;
     margin-bottom: 1rem;
     animation: slideUp 1s ease forwards;
+    font-weight: 900;
 }
 
 /* CTA Buttons */
@@ -860,7 +861,7 @@ body {
     .hero p {
         font-size: 3rem;
         padding: 0 20px;
-        font-weight: 900;
+        
     }
 
     .cta-button-desktop {
@@ -947,6 +948,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
